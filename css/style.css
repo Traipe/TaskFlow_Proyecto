@@ -1,0 +1,175 @@
+/* Reset básico para que todo encaje bien */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Fondo del HTML con color pastel */
+body {
+    background-color: #99cbf7; /* Azul Pastel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* Contenedor principal o Header */
+header h1 {
+    color: #000080; /* Azul Marino */
+    margin-bottom: 30px;
+    font-style: oblique;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-align: justify; 
+}
+
+/* Estilo del Formulario */
+#formTarea {
+    background-color: #f3bef3; /* Rosa Pastel */
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #800020; /* Borde Burdeo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Input de texto */
+#descripcion {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #090944; /* Borde Azul Marino */
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Botón Agregar */
+button {
+    background-color: #000080; /* Azul Marino */
+    color: rgb(151, 233, 248);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: flexbox;
+    align-items: center;
+    
+}
+
+button:hover {
+    background-color: #803100; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+/* Sección de la Lista */
+section {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #000080;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+p {
+    color: #ffdffd;
+    background-color: #000000;
+    font-style: italic; 
+
+}
+/* Estilo de los items de la lista (Tareas) */
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #800020; /* Acento lateral Burdeo */
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #ffb6c1; /* Rosa pastel */
+    color: #800020; /* Burdeo */
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-eliminar:hover {
+    background-color: #ffc0cb; /* Rosa más claro */
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+    background-color: #add8e6; /* Azul pastel */
+    color: #000080; /* Azul marino */
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-cancelar:hover {
+    background-color: #b0e0e6; /* Azul más suave */
+}
+
+/* Checkbox estilo pastel */
+input[type="checkbox"] {
+    accent-color: #90ee90; /* Verde pastel */
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+/* Footer animado estilo construcción */
+.banda-construccion {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffeb3b,
+        #ffc43b 10px,
+        #d3ed41 10px,
+        #e5d011 20px
+    );
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.texto-banda {
+    white-space: nowrap;
+    animation: moverBanda 10s linear infinite;
+    padding-left: 100%;
+}
+
+@keyframes moverBanda {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
