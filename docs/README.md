@@ -48,3 +48,6 @@ El proyecto **TaskFlow** consiste en el desarrollo de una aplicación web intera
 <p align="center">
   <img src="img/logo.png" alt="Traipe Logo" width="200">
 </p>
+![Logo](img/logo.png)
+
+
