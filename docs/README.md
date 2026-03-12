@@ -45,4 +45,8 @@ El proyecto **TaskFlow** consiste en el desarrollo de una aplicación web intera
 
 **TaskFlow demuestra cómo aplicar JavaScript moderno en un caso práctico de gestión de tareas, logrando una aplicación funcional, escalable y fácil de usar.**
 
-![logo](../img/logo.png)
+<p align="center">
+  <img src="img/logo.png" alt="Traipe Logo" width="200">
+</p>
+
+
